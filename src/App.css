@@ -1,14 +1,43 @@
 .img-wrapper img {
-  width: 1000px;
-  margin-top: 20px;;
+  width: 1500px;
+  margin-top: -150px;
   
 }
-
+.support
+{
+  margin-top: -40px;
+}
 .img-iphoneten img {
   width: 200px;
-  margin-top: 20px;;
+  margin-top: -50px;;
 }
 
+.icon{
+  margin-top: 10px;
+}
+.tag
+{
+  color: red;
+}
+
+.name
+{
+  color: teal;
+  border: 1px;
+  right: 10px;
+  margin-top: -10px;
+  
+}
+.cart{
+  position: absolute;
+
+  /* margin-top: 10px;
+    margin-bottom: .5rem;
+    font-weight: 500;
+    line-height: 1.2;
+    margin-left: 1080px;
+    color: red;   */
+}
 
 .App {
   text-align: center;
@@ -51,10 +80,14 @@
 
 .btn-wrapper button {
   background-color: red;
+  margin-top: 10%;
   right: 0px;
   margin: 5%;
+  left: 5%;
+  margin-top: -100px;
+  margin-left: px;
   border: 0px;
-  padding: 10px;
+  padding: 5px;
   border-radius: 4px;
   color: #fff;
   box-shadow: #333 0px 1px 5px;
@@ -80,14 +113,34 @@
 }
 .cart-count{
   
-    position: absolute;
-    right: 200px;
-    top: 32px;
-    z-index: 2;
+     position: absolute;
+    right: 230px;
+    top: 102px;
+    z-index: 2; 
     background-color: red;
-    padding: 7px;
-    width: 30px;
+    padding: 1px;
+    width: 15px;
     height: 20px;
-    border-radius: 5%;
+    border-radius: 9%;
     color: #fff;
 }
+
+.mobile-world{
+  color: blueviolet;
+}
+
+/* .iphone
+{
+  margin: 0;
+    font-family: var(--bs-body-font-family);
+    font-size: var(--bs-body-font-size);
+    font-weight: var(--bs-body-font-weight);
+    line-height: var(--bs-body-line-height);
+    color: var(--bs-body-color);
+    text-align: var(--bs-body-text-align);
+    background-color: var(--bs-body-bg);
+    /* -webkit-text-size-adjust: 100%; 
+    size: 200px;
+    -webkit-tap-highlight-color: transparent;
+} */
+

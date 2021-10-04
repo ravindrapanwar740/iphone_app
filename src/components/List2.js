@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import { Table } from "react-bootstrap";
+import Containers from './Containers';
 
 class List2 extends Component {
     constructor(props) {

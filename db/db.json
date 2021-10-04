@@ -75,15 +75,42 @@
       "modal": "F1",
       "rating": "4",
       "prize": "1000",
-      "id": 12
+      "id": 11
     },
     {
       "name": "Moto",
       "modal": "g5",
       "rating": "4.3",
       "prize": "1000",
+      "id": 12
+    },
+    {
+      "name": "Vivo",
+      "modal": "Y81",
+      "rating": "4.8",
+      "prize": "5000",
       "id": 13
+    },
+    {
+      "name": "Spice",
+      "modal": "5",
+      "rating": "4",
+      "prize": "200",
+      "id": 14
+    },
+    {
+      "name": "Iphone",
+      "modal": "6",
+      "rating": "5",
+      "prize": "4000",
+      "id": 15
+    },
+    {
+      "name": "Iphone",
+      "modal": "6s",
+      "rating": "4.6",
+      "prize": "200",
+      "id": 16
     }
-  
   ]
 }

@@ -1,83 +1,93 @@
-import React, { Component } from 'react'
+import React, { Component } from "react";
+import { Form, Button } from "react-bootstrap";
 
 class AddPhone extends Component {
-constructor(props) {
-    super(props)
+  constructor(props) {
+    super(props);
 
     this.state = {
-        name: null,
-        modal:null,
-        rating: null,
-        prize: null
-    }
-}
+      name: null,
+      modal: null,
+      rating: null,
+      prize: null,
+    };
+  }
 
-    create()
-{
-  fetch("http://localhost:3000/iphone",{
-    method:"Post",
-    headers:{
-'content-type':'application/json'
-    },
-    body:JSON.stringify(this.state)
-  }).then((result)=>{
-result.json().then((resp)=>{
-alert("data insert")
-})
-
-  })
-}
-    render() {
-        return (
-            <div>
-               <h1>Creating...</h1> 
-               <div>
-          <input
-            onChange={(event) => {
-              this.setState({
-                name: event.target.value,
-              });
-            }}
-            placeholder="Enter Phone name"
-          />
-          <br />
-          <br />
-          <input
-            onChange={(event) => {
-              this.setState({
-                modal: event.target.value,
-              });
-            }}
-            placeholder="Enter Modal no..."
-          />
-          <br />
-          <br />
-          <input 
-            onChange={(event) => {
-              this.setState({
-                rating: event.target.value,
-              });
-            }}
-            placeholder="Enter Rating"
-          />
-          <br />
-          <br />
-          <input 
-            onChange={(event) => {
-              this.setState({
-                prize: event.target.value,
-              });
-            }}
-            placeholder="Enter Prize"
-          />
-          <br />
-          <br />
-          
-          <button onClick={()=>{this.create()}}>Add Phone</button>
+  create() {
+    fetch("http://localhost:3000/iphone", {
+      method: "Post",
+      headers: {
+        "content-type": "application/json",
+      },
+      body: JSON.stringify(this.state),
+    }).then((result) => {
+      result.json().then((resp) => {
+        alert("data insert");
+      });
+    });
+  }
+  render() {
+    return (
+      <div>
+        <h1>Creating...</h1>
+        <div>
+          <Form>
+            <Form.Control
+              type="text"
+              onChange={(event) => {
+                this.setState({
+                  name: event.target.value,
+                });
+              }}
+              placeholder="Enter Phone Name"
+            />{" "}
+            <br />
+            <br />
+            <Form.Control
+              onChange={(event) => {
+                this.setState({
+                  modal: event.target.value,
+                });
+              }}
+              placeholder="Enter Modal no..."
+            />
+            <br />
+            <br />
+            <Form.Control
+              onChange={(event) => {
+                this.setState({
+                  rating: event.target.value,
+                });
+              }}
+              placeholder="Enter Rating"
+            />
+            <br />
+            <br />
+            <Form.Control
+              onChange={(event) => {
+                this.setState({
+                  prize: event.target.value,
+                });
+              }}
+              placeholder="Enter Prize"
+            />
+            <br />
+            <br />
+            <Button
+            variant="outline-success"
+             
+              type="Add Phone"
+              onClick={() => {
+                this.create();
+              }}
+            >
+              Submit
+            </Button>
+          </Form>
         </div>
-            </div>
-        )
-    }
+      </div>
+    );
+  }
 }
 
-export default AddPhone
+export default AddPhone;

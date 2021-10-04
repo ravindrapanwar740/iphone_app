@@ -6,12 +6,11 @@ import List from "./components/Phone";
 import About from "./components/About";
 import Support from "./components/Support";
 import { BrowserRouter as Router, Link, Route, Switch } from "react-router-dom";
-import { Navbar, Nav } from "react-bootstrap";
+import { Navbar, Nav, Container } from "react-bootstrap";
 
 import ReactDOM from "react-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faCoffee,
   faHome,
   faList,
   faInfoCircle,
@@ -24,40 +23,38 @@ import Search from "./components/Search";
 import List2 from "./components/List2";
 import AddPhone from "./components/AddPhone";
 import Phones from "./components/Phone";
+import Containers from "./components/Containers";
+import User from "./redux_components/User";
 
 class App extends Component {
   render() {
     return (
-      <div>
-        {/* <Phones /> */}
-        {/* <List2 />  */}
+      <div className="icon">
+        <Containers />
         <Router>
-          <Navbar bg="light" expand="lg">
+          <Navbar bg="dark" expand="lg" variant="dark">
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav.Link href="#home">
+                {" "}
                 <Link to="/">
-                  <FontAwesomeIcon icon={faHome} />
-                  Home
+                  <FontAwesomeIcon icon={faHome} /> Home{" "}
                 </Link>
               </Nav.Link>
               <Nav.Link href="#link">
-                {" "}
                 <Link to="/search">
-                  <FontAwesomeIcon icon={faSearch} />
+                  <FontAwesomeIcon icon={faSearch} /> Search
                 </Link>
-                Search
               </Nav.Link>
               <Nav.Link href="#link">
-                {" "}
                 <Link to="/phones">
-                  <FontAwesomeIcon icon={faList} />
+                  <FontAwesomeIcon icon={faList} /> Phones
                 </Link>
-                Phones
               </Nav.Link>
               <Nav.Link href="#link">
                 {" "}
                 <Link to="/list2">
+                  {" "}
                   <FontAwesomeIcon icon={faList} />
                   List
                 </Link>
@@ -66,22 +63,22 @@ class App extends Component {
                 {" "}
                 <Link to="/addphone">
                   <FontAwesomeIcon icon={faPlusSquare} />
+                  AddPhone
                 </Link>
-                AddPhone
               </Nav.Link>
               <Nav.Link href="#link">
                 {" "}
                 <Link to="/about">
                   <FontAwesomeIcon icon={faInfoCircle} />
+                  About
                 </Link>
-                About
               </Nav.Link>
               <Nav.Link href="#link">
                 {" "}
                 <Link to="/support">
                   <FontAwesomeIcon icon={faQuestionCircle} />
+                  Support{" "}
                 </Link>
-                Support
               </Nav.Link>
             </Navbar.Collapse>
           </Navbar>
