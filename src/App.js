@@ -38,7 +38,7 @@ class App extends Component {
               <Nav.Link href="#home">
                 {" "}
                 <Link to="/">
-                  <FontAwesomeIcon icon={faHome} /> Home{" "}
+                  <FontAwesomeIcon icon={faHome} /> Home
                 </Link>
               </Nav.Link>
               <Nav.Link href="#link">
@@ -52,32 +52,30 @@ class App extends Component {
                 </Link>
               </Nav.Link>
               <Nav.Link href="#link">
-                {" "}
                 <Link to="/list2">
-                  {" "}
                   <FontAwesomeIcon icon={faList} />
                   List
                 </Link>
               </Nav.Link>
               <Nav.Link href="#link">
-                {" "}
+              
                 <Link to="/addphone">
                   <FontAwesomeIcon icon={faPlusSquare} />
                   AddPhone
                 </Link>
               </Nav.Link>
               <Nav.Link href="#link">
-                {" "}
+                
                 <Link to="/about">
                   <FontAwesomeIcon icon={faInfoCircle} />
                   About
                 </Link>
               </Nav.Link>
               <Nav.Link href="#link">
-                {" "}
+                
                 <Link to="/support">
                   <FontAwesomeIcon icon={faQuestionCircle} />
-                  Support{" "}
+                  Support
                 </Link>
               </Nav.Link>
             </Navbar.Collapse>

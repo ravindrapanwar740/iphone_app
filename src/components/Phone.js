@@ -9,7 +9,7 @@ class Phones extends Component {
     super(props);
 
     this.state = {
-      count: 1,
+      count: 0,
     };
   }
   countNumber() {
@@ -20,7 +20,14 @@ class Phones extends Component {
   }
   dcountNumber() {
     this.setState({
-      count: this.state.count - 1,
+
+       count: this.state.count - 1,
+       
+      // }
+      // if(this.state.count!==0)
+      // {
+
+      // }
     });
     console.log(this.state.count);
   }
@@ -29,11 +36,12 @@ class Phones extends Component {
       <div>
         {/* <h1>Iphone World:</h1> */}
         {/* <h1>This Phones are available in stock</h1> */}
-        <div className="tag">
+        {/* <div className="tag">
           <h1>{this.state.count}</h1>
-        </div>
+        </div> */}
+        <span className="cart-count">{this.state.count}</span>
 
-        <div className="cart-count">
+        <div className="add-to-cart img">
           <img src="https://static.vecteezy.com/system/resources/thumbnails/000/496/007/small/Ecommerce_998.jpg" />
         </div>
 
@@ -74,13 +82,13 @@ class Phones extends Component {
             >
               Add to cart
             </button>
-            <button
+            {/* <button
               onClick={() => {
                 this.dcountNumber();
               }}
             >
               Remove to cart
-            </button>
+            </button> */}
           </div>
         </div>
 
