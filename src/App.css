@@ -26,7 +26,10 @@
   border: 1px;
   right: 10px;
   margin-top: -10px;
-  
+}
+.nc
+{
+  color:black;
 }
 .cart{
   position: absolute;
@@ -99,7 +102,6 @@
     margin-left: 10%;
 }
 .item {
-  float: left;
   display: inline-block;
   width: 120px;
   padding: 20px;

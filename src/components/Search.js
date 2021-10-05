@@ -29,7 +29,7 @@ class Search extends Component {
         return (
             <Container>
                  
-        <Form.Control  type="text"
+        <Form.Control  type="text" 
           onChange={(event) => this.search(event.target.value)}
           placeholder="Search"
         />

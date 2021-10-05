@@ -1,8 +1,8 @@
-import About from "./About";
+//import About from "./About";
 
-import { BrowserRouter as Router, Link, Route, Switch } from "react-router-dom";
+//import { BrowserRouter as Router, Link, Route, Switch } from "react-router-dom";
 import React, { Component } from "react";
-import { Form, ListGroup, ListGroupItem } from "react-bootstrap";
+import { ListGroup,Badge  } from "react-bootstrap";//ListGroupItem,Form, 
 
 class Phones extends Component {
   constructor(props) {
@@ -22,25 +22,14 @@ class Phones extends Component {
     this.setState({
 
        count: this.state.count - 1,
-       
-      // }
-      // if(this.state.count!==0)
-      // {
-
-      // }
-    });
+          });
     console.log(this.state.count);
   }
   render() {
     return (
       <div>
-        {/* <h1>Iphone World:</h1> */}
-        {/* <h1>This Phones are available in stock</h1> */}
-        {/* <div className="tag">
-          <h1>{this.state.count}</h1>
-        </div> */}
+       
         <span className="cart-count">{this.state.count}</span>
-
         <div className="add-to-cart img">
           <img src="https://static.vecteezy.com/system/resources/thumbnails/000/496/007/small/Ecommerce_998.jpg" />
         </div>
@@ -50,7 +39,6 @@ class Phones extends Component {
          <div className="name">
          <span>Iphone 12 $1000</span>
          </div>
-         
           <ListGroup>
             <ListGroup.Item variant="secondary">
               <li>A super-powerful chip</li>

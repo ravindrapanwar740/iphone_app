@@ -1,5 +1,7 @@
 import React, { Component } from "react";
-import { Form, Button } from "react-bootstrap";
+import { Form, Button ,Badge,Placeholder,ProgressBar} from "react-bootstrap";
+//import Placeholder from 'react-bootstrap/Placeholder'
+
 
 class AddPhone extends Component {
   constructor(props) {
@@ -29,7 +31,13 @@ class AddPhone extends Component {
   render() {
     return (
       <div>
-        <h1>Creating...</h1>
+        {/* <h1><Badge bg="danger">Creating...</Badge></h1> */}
+        <h1>Creating........</h1>
+        <ProgressBar animated now={45} />
+     {/* <div>
+     <h1>  <Badge bg="secondary">Phone</Badge></h1>
+       </div>  */}
+         
         <div>
           <Form>
             <Form.Control
@@ -39,8 +47,9 @@ class AddPhone extends Component {
                   name: event.target.value,
                 });
               }}
-              placeholder="Enter Phone Name"
-            />{" "}
+               placeholder="Enter Phone Name"
+             
+            />{" "} 
             <br />
             <br />
             <Form.Control
