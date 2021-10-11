@@ -9,7 +9,7 @@
 }
 .img-iphoneten img {
   width: 200px;
-  margin-top: -50px;;
+  margin-top: -40px;;
 }
 
 .icon{
@@ -26,7 +26,10 @@
   border: 1px;
   right: 10px;
   margin-top: -10px;
-  
+}
+.nc
+{
+  color:black;
 }
 .cart{
   position: absolute;
@@ -99,28 +102,27 @@
     margin-left: 10%;
 }
 .item {
-  float: left;
   display: inline-block;
   width: 120px;
   padding: 20px;
   height: 70px;
 }
 .add-to-cart img{
-  width: 50px;
+  width: 80px;
     position: absolute;
     right: 1%;
-    top: 1%;
+    top: 10%;
 }
 .cart-count{
   
      position: absolute;
-    right: 230px;
-    top: 102px;
+    right: 22px;
+    top: 90px;
     z-index: 2; 
     background-color: red;
     padding: 1px;
-    width: 15px;
-    height: 20px;
+    width: 22px;
+    height: 23px;
     border-radius: 9%;
     color: #fff;
 }

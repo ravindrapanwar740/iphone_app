@@ -1,11 +1,13 @@
 import React from "react";
+import  Accordion  from "react-bootstrap/Accordion"
+
 
 function About() {
   return (
     <div className="img-wrapper img">
       <img src="https://i.pinimg.com/originals/16/e2/66/16e26614c9b819217afda964eff43e43.jpg" />
       {/* <img src="https://thumbs.gfycat.com/GrizzledGregariousAnnelid-max-1mb.gif" /> */}
-
+  
     </div>
   );
 }

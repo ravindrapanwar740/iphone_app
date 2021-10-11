@@ -111,6 +111,27 @@
       "rating": "4.6",
       "prize": "200",
       "id": 16
+    },
+    {
+      "name": "Iphone",
+      "modal": "5s",
+      "rating": "4",
+      "prize": "100",
+      "id": 17
+    },
+    {
+      "name": "oppo",
+      "modal": "F11",
+      "rating": "4.8",
+      "prize": "2000",
+      "id": 18
+    },
+    {
+      "name": "Samsung",
+      "modal": "M30",
+      "rating": "4.5",
+      "prize": "2000",
+      "id": 19
     }
   ]
 }
